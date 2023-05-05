@@ -1,0 +1,182 @@
+\hypertarget{classpieces_1_1_king}{}\doxysection{pieces.\+King Class Reference}
+\label{classpieces_1_1_king}\index{pieces.King@{pieces.King}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpieces_1_1_king_a9634b953030b6a6bb696465a24136481}{King}} (String i, String p, int c, int x, int y)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_king_a50abc32a712bcea91dd14ab56271fb3e}{setx}} (int x)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_king_ad2cc9233c35a950bedc47bf7626d0b4d}{sety}} (int y)
+\item 
+int \mbox{\hyperlink{classpieces_1_1_king_af18ad8ae71d8f3b78f54ed079ebf0009}{getx}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_king_a56357600c81542772091388891fe772b}{gety}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_king_ac6682724966b9265afe3f7f4ed4610f1}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\item 
+boolean \mbox{\hyperlink{classpieces_1_1_king_ac3d94b4b9dd3de4087ff22a2a0389a19}{isindanger}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} pos\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}{set\+Id}} (String id)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}{set\+Path}} (String path)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}{set\+Color}} (int c)
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}{get\+Id}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}{getcolor}} ()
+\item 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}{getcopy}} ()  throws Clone\+Not\+Supported\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}\label{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}} 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ {\bfseries possiblemoves} = new Array\+List$<$\mbox{\hyperlink{classchess_1_1_cell}{Cell}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase Rey extiende la clase Pieza y contiene métodos para mover el rey y comprobar si está bajo amenaza en una partida de ajedrez.
+
+\begin{DoxyAuthor}{Author}
+Fernando Pereira 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{See also}
+Piece 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpieces_1_1_king_a9634b953030b6a6bb696465a24136481}\label{classpieces_1_1_king_a9634b953030b6a6bb696465a24136481}} 
+\index{pieces.King@{pieces.King}!King@{King}}
+\index{King@{King}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{King()}{King()}}
+{\footnotesize\ttfamily pieces.\+King.\+King (\begin{DoxyParamCaption}\item[{String}]{i,  }\item[{String}]{p,  }\item[{int}]{c,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Crea un nuevo objeto King con los parámetros proporcionados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & el identificador del objeto King \\
+\hline
+{\em p} & la ruta del objeto King \\
+\hline
+{\em c} & el color del objeto King \\
+\hline
+{\em x} & la coordenada x del objeto King \\
+\hline
+{\em y} & la coordenada y del objeto King \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpieces_1_1_king_af18ad8ae71d8f3b78f54ed079ebf0009}\label{classpieces_1_1_king_af18ad8ae71d8f3b78f54ed079ebf0009}} 
+\index{pieces.King@{pieces.King}!getx@{getx}}
+\index{getx@{getx}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{getx()}{getx()}}
+{\footnotesize\ttfamily int pieces.\+King.\+getx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la coordenada x del objeto.
+
+\begin{DoxyReturn}{Returns}
+la coordenada x del objeto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_king_a56357600c81542772091388891fe772b}\label{classpieces_1_1_king_a56357600c81542772091388891fe772b}} 
+\index{pieces.King@{pieces.King}!gety@{gety}}
+\index{gety@{gety}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{gety()}{gety()}}
+{\footnotesize\ttfamily int pieces.\+King.\+gety (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la coordenada y del objeto.
+
+\begin{DoxyReturn}{Returns}
+la coordenada y del objeto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_king_ac3d94b4b9dd3de4087ff22a2a0389a19}\label{classpieces_1_1_king_ac3d94b4b9dd3de4087ff22a2a0389a19}} 
+\index{pieces.King@{pieces.King}!isindanger@{isindanger}}
+\index{isindanger@{isindanger}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{isindanger()}{isindanger()}}
+{\footnotesize\ttfamily boolean pieces.\+King.\+isindanger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_cell}{Cell}}}]{state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+La función comprueba si una pieza de ajedrez dada está en peligro de ser atacada por cualquier pieza contraria en el tablero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & un array 2D que representa el estado actual del tablero de ajedrez, donde cada elemento es un objeto Celda que contiene información sobre la pieza en esa celda (si la hay) y su posición en el tablero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El método devuelve un valor booleano, que es verdadero si la pieza actual está en peligro de ser capturada por una pieza del adversario, y falso en caso contrario. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_king_ac6682724966b9265afe3f7f4ed4610f1}\label{classpieces_1_1_king_ac6682724966b9265afe3f7f4ed4610f1}} 
+\index{pieces.King@{pieces.King}!move@{move}}
+\index{move@{move}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ pieces.\+King.\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_cell}{Cell}}}]{state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Calcula y devuelve una lista de celdas posibles a las que el Rey puede moverse.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & la matriz de estado del tablero de ajedrez \\
+\hline
+{\em x} & la coordenada x actual del Rey \\
+\hline
+{\em y} & la coordenada y actual del Rey \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una lista de celdas posibles a las que el Rey puede moverse 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}.
+
+\mbox{\Hypertarget{classpieces_1_1_king_a50abc32a712bcea91dd14ab56271fb3e}\label{classpieces_1_1_king_a50abc32a712bcea91dd14ab56271fb3e}} 
+\index{pieces.King@{pieces.King}!setx@{setx}}
+\index{setx@{setx}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{setx()}{setx()}}
+{\footnotesize\ttfamily void pieces.\+King.\+setx (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Establece la coordenada x del objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & la nueva coordenada x del objeto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpieces_1_1_king_ad2cc9233c35a950bedc47bf7626d0b4d}\label{classpieces_1_1_king_ad2cc9233c35a950bedc47bf7626d0b4d}} 
+\index{pieces.King@{pieces.King}!sety@{sety}}
+\index{sety@{sety}!pieces.King@{pieces.King}}
+\doxysubsubsection{\texorpdfstring{sety()}{sety()}}
+{\footnotesize\ttfamily void pieces.\+King.\+sety (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+Establece la coordenada y del objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & la nueva coordenada y del objeto \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+TESTER/\+Downloads/\+Examen/\+Chess\+OOP-\/master/\+Chess/src/pieces/King.\+java\end{DoxyCompactItemize}

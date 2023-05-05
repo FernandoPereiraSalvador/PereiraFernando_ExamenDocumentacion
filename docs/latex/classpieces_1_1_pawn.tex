@@ -1,0 +1,104 @@
+\hypertarget{classpieces_1_1_pawn}{}\doxysection{pieces.\+Pawn Class Reference}
+\label{classpieces_1_1_pawn}\index{pieces.Pawn@{pieces.Pawn}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpieces_1_1_pawn_ab0f92a6f170756df336233a9e5da8849}{Pawn}} (String i, String p, int c)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_pawn_aad576e0f9ce91768c0d2bc64dd0edb8f}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} pos\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}{set\+Id}} (String id)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}{set\+Path}} (String path)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}{set\+Color}} (int c)
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}{get\+Id}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}{getcolor}} ()
+\item 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}{getcopy}} ()  throws Clone\+Not\+Supported\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}\label{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}} 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ {\bfseries possiblemoves} = new Array\+List$<$\mbox{\hyperlink{classchess_1_1_cell}{Cell}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta es la clase Peón heredada de la pieza
+
+\begin{DoxyAuthor}{Author}
+Fernando Pereira 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{See also}
+Piece 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpieces_1_1_pawn_ab0f92a6f170756df336233a9e5da8849}\label{classpieces_1_1_pawn_ab0f92a6f170756df336233a9e5da8849}} 
+\index{pieces.Pawn@{pieces.Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!pieces.Pawn@{pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}}
+{\footnotesize\ttfamily pieces.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{String}]{i,  }\item[{String}]{p,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Crea un objeto de tipo Pawn con la identificación, ruta de imagen y color especificados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & la identificación del Pawn \\
+\hline
+{\em p} & la ruta de la imagen del Pawn \\
+\hline
+{\em c} & el color del Pawn (0 para blanco, 1 para negro) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpieces_1_1_pawn_aad576e0f9ce91768c0d2bc64dd0edb8f}\label{classpieces_1_1_pawn_aad576e0f9ce91768c0d2bc64dd0edb8f}} 
+\index{pieces.Pawn@{pieces.Pawn}!move@{move}}
+\index{move@{move}!pieces.Pawn@{pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ pieces.\+Pawn.\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_cell}{Cell}}}]{state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+La función determina los posibles movimientos de un peón en un tablero de ajedrez.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & una matriz 2D que representa el estado actual del tablero de ajedrez, donde cada elemento es un Objeto celda \\
+\hline
+{\em x} & El número de fila de la posición actual del peón en el tablero de ajedrez. \\
+\hline
+{\em y} & El índice de columna de la celda en la matriz 2D que representa el tablero de ajedrez. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El método devuelve un Array\+List de posibles movimientos para una pieza de peón en un tablero de ajedrez. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+TESTER/\+Downloads/\+Examen/\+Chess\+OOP-\/master/\+Chess/src/pieces/Pawn.\+java\end{DoxyCompactItemize}

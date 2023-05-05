@@ -1,0 +1,104 @@
+\hypertarget{classpieces_1_1_queen}{}\doxysection{pieces.\+Queen Class Reference}
+\label{classpieces_1_1_queen}\index{pieces.Queen@{pieces.Queen}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpieces_1_1_queen_a61d2586dcb3da3d2f521293599b04fb3}{Queen}} (String i, String p, int c)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_queen_a248ca7e20356b7a25287df0776e87a32}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} pos\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}{set\+Id}} (String id)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}{set\+Path}} (String path)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}{set\+Color}} (int c)
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}{get\+Id}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}{getcolor}} ()
+\item 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}{getcopy}} ()  throws Clone\+Not\+Supported\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}\label{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}} 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ {\bfseries possiblemoves} = new Array\+List$<$\mbox{\hyperlink{classchess_1_1_cell}{Cell}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta es la clase Queen heredada de la clase abstracta Piece
+
+\begin{DoxyAuthor}{Author}
+Fernando Pereira 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{See also}
+Piece 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpieces_1_1_queen_a61d2586dcb3da3d2f521293599b04fb3}\label{classpieces_1_1_queen_a61d2586dcb3da3d2f521293599b04fb3}} 
+\index{pieces.Queen@{pieces.Queen}!Queen@{Queen}}
+\index{Queen@{Queen}!pieces.Queen@{pieces.Queen}}
+\doxysubsubsection{\texorpdfstring{Queen()}{Queen()}}
+{\footnotesize\ttfamily pieces.\+Queen.\+Queen (\begin{DoxyParamCaption}\item[{String}]{i,  }\item[{String}]{p,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Crea un objeto de tipo Queen con la identificación, ruta de imagen y color especificados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & la identificación de la Queen \\
+\hline
+{\em p} & la ruta de la imagen de la Queen \\
+\hline
+{\em c} & el color de la Queen (0 para blanco, 1 para negro) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpieces_1_1_queen_a248ca7e20356b7a25287df0776e87a32}\label{classpieces_1_1_queen_a248ca7e20356b7a25287df0776e87a32}} 
+\index{pieces.Queen@{pieces.Queen}!move@{move}}
+\index{move@{move}!pieces.Queen@{pieces.Queen}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ pieces.\+Queen.\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_cell}{Cell}}}]{state\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Esta función calcula todos los movimientos posibles de una reina en un tablero de ajedrez.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & un array 2D que representa el estado actual del tablero de ajedrez, donde cada elemento es un objeto Celda que contiene información sobre la pieza en esa celda (si la hay) y su posición en el tablero. \\
+\hline
+{\em x} & La coordenada x de la posición actual de la Reina en el tablero de ajedrez. \\
+\hline
+{\em y} & El parámetro y representa el número de columna de la celda en el tablero de ajedrez. Se utiliza para determinar los posibles movimientos de una pieza reina en las direcciones vertical y horizontal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El método devuelve un Array\+List de objetos Cell, que representan los posibles movimientos que una pieza Reina puede hacer en un tablero de ajedrez. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classpieces_1_1_piece}{pieces.\+Piece}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+TESTER/\+Downloads/\+Examen/\+Chess\+OOP-\/master/\+Chess/src/pieces/Queen.\+java\end{DoxyCompactItemize}

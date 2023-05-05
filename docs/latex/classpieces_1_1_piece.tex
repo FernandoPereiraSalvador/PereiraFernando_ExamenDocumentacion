@@ -1,0 +1,147 @@
+\hypertarget{classpieces_1_1_piece}{}\doxysection{pieces.\+Piece Class Reference}
+\label{classpieces_1_1_piece}\index{pieces.Piece@{pieces.Piece}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}{move}} (\mbox{\hyperlink{classchess_1_1_cell}{Cell}} pos\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, int x, int y)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}{set\+Id}} (String id)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}{set\+Path}} (String path)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}{set\+Color}} (int c)
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}{get\+Path}} ()
+\item 
+String \mbox{\hyperlink{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}{get\+Id}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}{getcolor}} ()
+\item 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}{getcopy}} ()  throws Clone\+Not\+Supported\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}\label{classpieces_1_1_piece_a350d60ec36892a34774d287da8cae1e2}} 
+Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ {\bfseries possiblemoves} = new Array\+List$<$\mbox{\hyperlink{classchess_1_1_cell}{Cell}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta es la Clase Pieza. Es una clase abstracta de la que se heredan todas las piezas reales. Define todas las funciones comunes a todas las piezas La función move() es una función abstracta que debe ser reemplazada en todas las clases heredadas. Implementa la interfaz Cloneable ya que se requiere una copia de la pieza muy a menudo.
+
+\begin{DoxyAuthor}{Author}
+Fernando Pereira 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+1.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}\label{classpieces_1_1_piece_a70a3ab5805026ad22d75e82eba4aaf95}} 
+\index{pieces.Piece@{pieces.Piece}!getcolor@{getcolor}}
+\index{getcolor@{getcolor}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getcolor()}{getcolor()}}
+{\footnotesize\ttfamily int pieces.\+Piece.\+getcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el color del objeto.
+
+\begin{DoxyReturn}{Returns}
+el color (0 para blanco, 1 para negro) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}\label{classpieces_1_1_piece_a00df1840a079c87feb136555e1e7d62d}} 
+\index{pieces.Piece@{pieces.Piece}!getcopy@{getcopy}}
+\index{getcopy@{getcopy}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getcopy()}{getcopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} pieces.\+Piece.\+getcopy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Clone\+Not\+Supported\+Exception}
+
+Crea y devuelve una copia del objeto Piece.
+
+\begin{DoxyReturn}{Returns}
+una copia del objeto Piece 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Clone\+Not\+Supported\+Exception} & si la clonación no es compatible con el objeto \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}\label{classpieces_1_1_piece_ad87aca569644e35fb0d4cd2006cccd6d}} 
+\index{pieces.Piece@{pieces.Piece}!getId@{getId}}
+\index{getId@{getId}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily String pieces.\+Piece.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la identificación del objeto.
+
+\begin{DoxyReturn}{Returns}
+la identificación 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}\label{classpieces_1_1_piece_a83ca02d8f33d50dc4fcfc8934dca902d}} 
+\index{pieces.Piece@{pieces.Piece}!getPath@{getPath}}
+\index{getPath@{getPath}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily String pieces.\+Piece.\+get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la ruta de la imagen del objeto.
+
+\begin{DoxyReturn}{Returns}
+la ruta de la imagen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}\label{classpieces_1_1_piece_a5cf069738cff43e1b6616bc193721c42}} 
+\index{pieces.Piece@{pieces.Piece}!move@{move}}
+\index{move@{move}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily abstract Array\+List$<$ \mbox{\hyperlink{classchess_1_1_cell}{Cell}} $>$ pieces.\+Piece.\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_cell}{Cell}}}]{pos\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpieces_1_1_bishop_add848b90ce11c1fe97530d9126ab41b8}{pieces.\+Bishop}}, \mbox{\hyperlink{classpieces_1_1_king_ac6682724966b9265afe3f7f4ed4610f1}{pieces.\+King}}, \mbox{\hyperlink{classpieces_1_1_knight_a7795d244a7195cc030a9d3137290f5d5}{pieces.\+Knight}}, \mbox{\hyperlink{classpieces_1_1_pawn_aad576e0f9ce91768c0d2bc64dd0edb8f}{pieces.\+Pawn}}, \mbox{\hyperlink{classpieces_1_1_queen_a248ca7e20356b7a25287df0776e87a32}{pieces.\+Queen}}, and \mbox{\hyperlink{classpieces_1_1_rook_a92c33e5292602037259a3dc943b1b17c}{pieces.\+Rook}}.
+
+\mbox{\Hypertarget{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}\label{classpieces_1_1_piece_af12d507d80028bbb0d861becb4037363}} 
+\index{pieces.Piece@{pieces.Piece}!setColor@{setColor}}
+\index{setColor@{setColor}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void pieces.\+Piece.\+set\+Color (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+Establece el color del objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & el color a establecer (0 para blanco, 1 para negro) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}\label{classpieces_1_1_piece_af2fdd1dcd575e9fcd0eef32b42aa846b}} 
+\index{pieces.Piece@{pieces.Piece}!setId@{setId}}
+\index{setId@{setId}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void pieces.\+Piece.\+set\+Id (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})}
+
+Establece la identificación del objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & la identificación a establecer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}\label{classpieces_1_1_piece_aed21b88c46f8a7e7d6670d7f61afab33}} 
+\index{pieces.Piece@{pieces.Piece}!setPath@{setPath}}
+\index{setPath@{setPath}!pieces.Piece@{pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void pieces.\+Piece.\+set\+Path (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+Establece la ruta de la imagen del objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & la ruta de la imagen a establecer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+TESTER/\+Downloads/\+Examen/\+Chess\+OOP-\/master/\+Chess/src/pieces/Piece.\+java\end{DoxyCompactItemize}
